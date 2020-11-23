@@ -1,0 +1,16 @@
+name: 'size'
+
+on:
+  push:
+
+jobs:
+
+  win:
+    runs-on: windows-latest
+    steps:
+    - run: Get-PSDrive
+
+  lin:
+    runs-on: ubuntu-latest
+    steps:
+    - run: df -h
